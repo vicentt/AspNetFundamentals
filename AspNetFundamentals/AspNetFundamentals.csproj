@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+    <Folder Include="Services\" />
+    <Folder Include="Services\Model\" />
+    <Folder Include="Abstrations\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Api\" />
+    <Folder Include="Api\Cities\" />
+    <Folder Include="Api\Cities\Request\" />
+    <Folder Include="Infractructure\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Infractructure\Attributes\" />
+    <Folder Include="Infractructure\ModelBinders\" />
+    <Folder Include="Infractructure\Filters\" />
+    <Folder Include="Infractructure\Constraints\" />
+    <Folder Include="Infractructure\Conventions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
+    <PackageReference Include="FluentValidation" Version="7.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Model\MiClase.cs" />
+  </ItemGroup>
+</Project>
